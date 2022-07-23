@@ -1,0 +1,21 @@
+<services>
+  <service name="obs_scm" mode="manual" >
+    <param name="url">https://github.com/zephyr-ada/gprconfig-kb-gnat-zephyr.git</param>
+    <param name="scm">git</param>
+    <param name="revision">main</param>
+    <!-- <param name="versionformat">@PARENT_TAG@-@TAG_OFFSET@</param>
+    <param name="versionrewrite-pattern">v(.*)</param>
+    <param name="versionrewrite-replacement">\1</param> -->
+    <param name="versionformat">%h</param>
+    <param name="filename">gprconfig-kb-gnat-zephyr</param>
+  </service>
+  <!-- <service name="set_version" mode="manual" /> -->
+  <service name="tar" mode="buildtime">
+    <param name="obsinfo">gprconfig-kb-gnat-zephyr.obsinfo</param>
+    <param name="exclude">.git**</param>
+  </service>
+  <service name="recompress" mode="buildtime">
+    <param name="file">*.tar</param>
+    <param name="compression">gz</param>
+  </service>
+</services>

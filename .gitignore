@@ -1,0 +1,16 @@
+# osc tool
+.osc
+.lock
+
+# temporary services data
+## common archives
+tmp*.obs_scm.service/
+## project specific archives
+gprconfig-kb-gnat-zephyr/
+
+# could be restored by run osc service manualrun
+## common archives
+*.obscpio
+*.obsinfo
+## project specific archives
+# none

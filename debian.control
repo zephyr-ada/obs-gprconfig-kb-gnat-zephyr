@@ -1,0 +1,12 @@
+Source: gprconfig-kb-gnat-zephyr
+Priority: extra
+Maintainer: Ilya Stolyarov <ila.embsys@gmail.com>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 3.9.5
+Section: devel
+
+Package: gprconfig-kb-gnat-zephyr
+Depends: gprbuild
+Section: devel
+Architecture: amd64
+Description: Zephyr's GNAT toolchain configuration for the GPR configuration knowledge base
